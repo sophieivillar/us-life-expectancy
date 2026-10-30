@@ -29,7 +29,7 @@ Our motive behind our project focuses on the perspective of a researcher from th
 ## Introduction/Context of the Project:
 1. this section is not mandatory, but if you feel like some content needs to be introduced in order to understand the methods and questions, please add all necessary details here
 
-*ANSWER HERE*
+Life expectancy is a great way to study the overall population health. However, it varies between males and females in each state. Studying this data allows us to identify the patterns in health across the different regions in the U.S. This project examines the life expectancy data for 2018 and 2020 to identify the changes in the life expectancy of males and females, the changes in the gap between these expectancies, and the changes in the totals of life expectancies for each state. We will use the dataset to apply statistical analysis, data visualization, and comparison of trends across the U.S. The main goal of this project is to determine the changes of male and female life expectancy across 2018 and 2020, which states had the most changes, and the correlation between high life expectancy and gender. With these findings, we will be able to better understand the patterns of gender based life expectancy across the U.S. in 2018 and 2020.
 
 ## Implementation Details:
 1. **go over the methods (with metrics, tools, plots) to be used to answer the question. this is the main body of the repo**
