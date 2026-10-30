@@ -8,7 +8,9 @@ Sophie Villar, Reem Mounir, Josie Spayd
 ## Objective and Motivation:
 1. **specify dataset and provide details**
 
-*ANSWER HERE*
+The objective of this project is to investigate a chosen dataset relating to our groups interest and write a functional program aimed at recieving useful information. Our chosen datasets reflects estimates of life expectancy at birth during the year of 2018 and 2020. Within our datasets, the estimates of life expectancy at birth are organized by total, male, and female populations based in each of the fifty states as well as the District of Columbia (D.C.). 
+
+Our motive behind our project focuses on the perspective of a researcher from the U.S. Department of Health and Human Services that is interested in how life expectancies shifted before and during the COVID-19 pandemic. With a range of data spanning two years, any information we extract with our program would be considered valid for confirming a significant comparison. 
 
 2. **specify the questions that you are asking (with the form of the expected answers) and the potential benefits that one would have**
 
