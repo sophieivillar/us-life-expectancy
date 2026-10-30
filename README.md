@@ -109,8 +109,9 @@ will be populated later
 ## References/Source Files:
 list all references the group used for the project (including journal/conference papers, GitHub repositories, open-source files, etc.)
 
-*ANSWER HERE*
-
+- 2018 dataset: https://catalog.data.gov/dataset/u-s-state-life-expectancy-by-sex-2018 from_hint=eyJxIjoiVS5TLiBsaWZlIGV4cGVjdGFuY3kgYnkgc2V4Iiwic29ydCI6InJlbGV2YW5jZSJ9  
+- 2020 dataset: https://catalog.data.gov/dataset/u-s-state-life-expectancy-by-sex-2020?from_hint=eyJxIjoiZmVtYWxlIiwic29ydCI6InBvcHVsYXJpdHkifQ%3D%3D 
+- course canvas page (lecture slides): https://canvas.jmu.edu/courses/2193471/files/folder/Lecture%20Notes  
 
 **this is all used as a key for writing, do not delete anything below!**
 paragraph `import matlpotlib`
