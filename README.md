@@ -36,8 +36,8 @@ Life expectancy is a great way to study the overall population health. However, 
 
 *Question one: How did the life expectancy gap between males and females change within and across the U.S. from 2018 to 2020?*
 - Means: 
-    - Organize all given data by sex, state, and year
-    - Calculate gaps in Life expectancy for males and females in each state and each year
+    - Organize all given data by sex, state, and life expectancy
+    - Calculate life expectancy gender gap by subtracting the LE of females by the LE of males
     - Compare the gaps in life expectancy in each state between 2018 and 2020
     - calculate the average gap in life expectancy across the whole US
 - Metrics: 
@@ -48,9 +48,8 @@ Life expectancy is a great way to study the overall population health. However, 
 - Tools: 
     - excel to filter through data, do calculations, and create graphs 
 - Plots: 
-    - bar chart to compare male vs. female life expectancy across the US
-    - line graph to show average life expectancy gaps
-    - bar chart to compare life expectancy data across 2018 and 2020
+    - bar chart to compare the average life expectancy gap between 2018 and 2020
+    - bar chart to compare life expectancy gaps in each state between 2018 and 2020
 
 *Question two: How did state-level variation and rankings in overall life expectancy shift between 2018 and 2020, and which states experienced the largest overall gains or drops?*
 - Means: 
@@ -88,23 +87,57 @@ Life expectancy is a great way to study the overall population health. However, 
     - scatter plot gaps vs totals in 2020
     - add trend lines to both graphs to perform linear regression and compare both years 
 
-2. **added in coming phases**: screenshots that you feel is necessary to show project's complexity such as block diagrams, snippets, of the code that carries explicitly a method, a top-level code, etc.
+2. Screenshots that you feel is necessary to show project's complexity such as block diagrams, snippets, of the code that carries explicitly a method, a top-level code, etc.
+
+![alt text](image.png)
+                    Figure 1: Plot 2 Code 
+
+- Plot 2: Gender Life Expectancy Gap by State
+    - Data Preparation: To compare the gender life expectancy gap across the individual states, 
+    the 2018 and 2020 datasets were combined in a single dataframe. The datasets were matched by state names and suffixes were added to differentiate between data from different years.
+    - Visualization: The grouped bar chart was difficult to execute, but important to clearly display the gender gap for both years. Different colors were also used to signify the year in which that data aligned with.
+    - Formatting: Final commands were used to customize the appearance of the graph. In addition to the functions aimed at providing labels and legends, newer functions were used to ensure clear visibility of the state names.This meant overlap was avoided and labels were rotated to address spacing concerns.
+
+- **ANSWER HERE** (SOMETHING INTERESTING/DIFFICULT FROM QUESTION 2)
+- **ANSWER HERE** (SOMETHING INTERESTING/DIFFICULT FROM QUESTION 3)
 
 ## Results:
-will be populated later
+1. Question 1 Results:
+
+![alt text](image-3.png)
+
+Figure 2: Plot 1 Generated from Question 1 Script
+
+![alt text](image-2.png)
+
+Figure 3: Plot 2 Generated from Question 1 Script
+
+The results demonstrated that the average life expectancy of both males and females decreased from 2018 to 2020. Male life expectancy decreased from 75.70 to 73.84 years while female life expectancy decreased from 80.72 to 79.43 years. The average gender gap in life expectancy increased from 5.02 years in 2018 to 5.59 years in 2020. This represents a total increase of 0.57 years. In both years, Utah was identified as having the smallest gender gap, with 3.8 years in 2018 and 3.9 years in 2020. The largest gap was identified in New Mexico as 6.2 years in 2018 and the District of Columbia as 7.0 years in 2020. 
+
+2. Question 2 Results: **ANSWER HERE**
+3. Question 3 Results: **ANSWER HERE**
 
 ## Conclusions: 
-will be populated later
+1. Question 1 Conclusions: 
+Based on the results of the Question_One script, the difference between female and male life expectancy became larger between 2018 and 2020. While life expectancy decreased for both males and females, the larger decrease in male life expectancy contributed to this larger gap. Ultimately, the results suggest that the gender differences in life expectancy became more significant over this time period. With this, it is important to note that the variation in gender gaps across individual states demonstrate that this conclusion was not consistent throughout the United States.
+
+2. Questions 2 Conclusions: **ANSWER HERE**
+3. Question 3 Conclusions: **ANSWER HERE**
 
 ## Actions that need to be completed:
 will be populated later
 1. list all actions that need to be completed (checklist)
 
-    - Identify methods and metrics to answer questions
-    - Create a GitHub Repo and add the methods and metrics to it
-    - Submit the link of the GitHub repo as a URL
+    - Identify methods and metrics to answer questions [✓]
+    - Create a GitHub Repo and add the methods and metrics to it [✓]
+    - Submit the link of the GitHub repo as a URL for Phase 1 [✓]
+    - Create a Python script file for each question [✓]
+    - Use print() function to clearly indicate metrics calculated [✓]
+    - Use matplotlib to generate graphs [✓]
+    - Submit the link of the GitHub repo as a URL for Phase 2 []
 
 2. mention the issues that the group is facing for each action, if any
+- N/A
 
 ## References/Source Files:
 list all references the group used for the project (including journal/conference papers, GitHub repositories, open-source files, etc.)
