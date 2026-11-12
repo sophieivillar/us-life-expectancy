@@ -47,11 +47,11 @@ avg_gap_2020 = gap_2020["Gender Gap"].mean()
 # calculate standard deviation
 std_2018 = gap_2018["Gender Gap"].std()
 std_2020 = gap_2020["Gender Gap"].std()
-# identify minimum and maximum gender gaps
-min_gap_2018 = gap_2018["Gender Gap"].min()
-max_gap_2018 = gap_2018["Gender Gap"].max()
-min_gap_2020 = gap_2020["Gender Gap"].min()
-max_gap_2020 = gap_2020["Gender Gap"].max()
+# identify the row number with the minimum and maximum gender gaps
+min_gap_2018 = gap_2018.loc[gap_2018["Gender Gap"].idxmin()]
+max_gap_2018 = gap_2018.loc[gap_2018["Gender Gap"].idxmax()]
+min_gap_2020 = gap_2020.loc[gap_2020["Gender Gap"].idxmin()]
+max_gap_2020 = gap_2020.loc[gap_2020["Gender Gap"].idxmax()]
 # compare the average gender gaps
 change = avg_gap_2020 - avg_gap_2018
 
@@ -61,16 +61,16 @@ print("Average Male Life Expectancy:", round(avg_male_LE_2018, 2))
 print("Average Female Life Expectancy:", round(avg_female_LE_2018, 2))
 print("Average Gender Gap:", round(avg_gap_2018, 2))
 print("Standard Deviation:", round(std_2018, 2))
-print("Minimum Gender Gap:", round(min_gap_2018, 2))
-print("Maximum Gender Gap:", round(max_gap_2018, 2))
+print("Minimum Gender Gap:", round(min_gap_2018["Gender Gap"], 2), "years in", min_gap_2018["State"])
+print("Maximum Gender Gap:", round(max_gap_2018,["Gender Gap"], 2), "years in", max_gap_2018["State"])
 
 print("\n2020 Results:")
 print("Average Male Life Expectancy:", round(avg_male_LE_2020, 2))
 print("Average Female Life Expectancy:", round(avg_female_LE_2020, 2))
 print("Average Gender Gap:", round(avg_gap_2020, 2))
 print("Standard Deviation:", round(std_2020, 2))
-print("Minimum Gender Gap:", round(min_gap_2020, 2))
-print("Maximum Gender Gap:", round(max_gap_2020, 2))
+print("Minimum Gender Gap:", round(min_gap_2020["Gender Gap"], 2), "years in", min_gap_2020["State"])
+print("Maximum Gender Gap:", round(max_gap_2020,["Gender Gap"], 2), "years in", max_gap_2020["State"])
 
 print("\nComparison Between 2018 and 2020:")
 print("Change in Average Gender Gap:", round(change, 2), "years")
