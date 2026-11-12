@@ -54,7 +54,7 @@ Life expectancy is a great way to study the overall population health. However, 
 *Question two: How did state-level variation and rankings in overall life expectancy shift between 2018 and 2020, and which states experienced the largest overall gains or drops?*
 - Means: 
     - organize total life expectancies per state in 2018 and 2020
-    - calculate change in totals (2018 data - 2020 data)
+    - calculate change in totals (2020 data - 2018 data)
     - rank states from highest to lowest totals for both years 
     - find which states have the highest increases and decreases in their totals
 - Metrics: 
@@ -62,8 +62,10 @@ Life expectancy is a great way to study the overall population health. However, 
     - standard deviation of totals across the US
     - minimum and maximum totals 
     - change in totals from 2018 to 2020
-- Tools: 
-    - excel to organize the data and calculate the changes across the US as well as create graphs
+- Tools:
+    - Python with pandas to organize and analyze the data
+    - matplotlib to generate graphs
+    - VS Code to write and run the Python script
 - Plots: 
     - bar charts to compare totals between 2018 and 2020 
     - bar chart showing changes across the US across both years 
@@ -98,7 +100,11 @@ Life expectancy is a great way to study the overall population health. However, 
     - Visualization: The grouped bar chart was difficult to execute, but important to clearly display the gender gap for both years. Different colors were also used to signify the year in which that data aligned with.
     - Formatting: Final commands were used to customize the appearance of the graph. In addition to the functions aimed at providing labels and legends, newer functions were used to ensure clear visibility of the state names.This meant overlap was avoided and labels were rotated to address spacing concerns.
 
-- **ANSWER HERE** (SOMETHING INTERESTING/DIFFICULT FROM QUESTION 2)
+- Plot 3: State Life Expectancy Rankings
+    - Data Preparation: To compare the overall life expectancy across individual states, the 2018 and 2020 datasets were combined into a single dataframe. The datasets were matched by state names, and columns were renamed to differentiate between the two years.
+    - Visualization: The scatter plot was important for showing how state rankings changed between 2018 and 2020. Each point represents a state, allowing us to compare its ranking in both years.
+    - Formatting: Final commands were used to customize the appearance of the graph. Labels were added to identify the rankings for each year, and a diagonal reference line was included to make it easier to identify states that improved or declined in ranking.
+  
 - **ANSWER HERE** (SOMETHING INTERESTING/DIFFICULT FROM QUESTION 3)
 
 ## Results:
@@ -114,14 +120,32 @@ Figure 3: Plot 2 Generated from Question 1 Script
 
 The results demonstrated that the average life expectancy of both males and females decreased from 2018 to 2020. Male life expectancy decreased from 75.70 to 73.84 years while female life expectancy decreased from 80.72 to 79.43 years. The average gender gap in life expectancy increased from 5.02 years in 2018 to 5.59 years in 2020. This represents a total increase of 0.57 years. In both years, Utah was identified as having the smallest gender gap, with 3.8 years in 2018 and 3.9 years in 2020. The largest gap was identified in New Mexico as 6.2 years in 2018 and the District of Columbia as 7.0 years in 2020. 
 
-2. Question 2 Results: **ANSWER HERE**
+2. Question 2 Results:
+
+![Change in State Life Expectancy](plots/question2_state_changes.png)
+
+Figure 4: Change in State Life Expectancy from 2018 to 2020
+
+![State Life Expectancy Distributions](plots/question2_boxplot.png)
+
+Figure 5: State Life Expectancy Distributions
+
+![State Life Expectancy Rankings](plots/question2_rankings.png)
+
+Figure 6: State Life Expectancy Rankings from 2018 to 2020
+
+The results demonstrated that the average overall life expectancy across states decreased from 78.21 years in 2018 to 76.59 years in 2020. This represents an average decrease of 1.62 years. The standard deviation increased from 1.70 years in 2018 to 1.96 years in 2020. In 2018, West Virginia had the lowest life expectancy at 74.4 years, while Hawaii had the highest at 81.0 years. In 2020, Mississippi had the lowest life expectancy at 71.9 years, while Hawaii remained the highest at 80.7 years. The largest decrease was identified in New York at 2.8 years, followed by New Mexico and Mississippi at 2.7 years each. The smallest decrease was identified in New Hampshire at 0.1 years. New Hampshire also experienced the largest improvement in ranking, moving from 17th to 4th place, while New York experienced the largest decline, moving from 3rd to 15th place.
+
+
 3. Question 3 Results: **ANSWER HERE**
 
 ## Conclusions: 
 1. Question 1 Conclusions: 
 Based on the results of the Question_One script, the difference between female and male life expectancy became larger between 2018 and 2020. While life expectancy decreased for both males and females, the larger decrease in male life expectancy contributed to this larger gap. Ultimately, the results suggest that the gender differences in life expectancy became more significant over this time period. With this, it is important to note that the variation in gender gaps across individual states demonstrate that this conclusion was not consistent throughout the United States.
 
-2. Questions 2 Conclusions: **ANSWER HERE**
+2. Question 2 Conclusions:
+Based on the results of the Question2.py script, overall life expectancy decreased across all states between 2018 and 2020. The average life expectancy decreased by 1.62 years, supporting our original expectation that life expectancy would decline during the COVID-19 pandemic. New York experienced the largest decrease, while New Hampshire experienced the smallest decrease. The increase in standard deviation also demonstrated that the variation in life expectancy across states became greater in 2020. Additionally, the changes in state rankings showed that some states experienced larger decreases than others. Ultimately, the results suggest that life expectancy declined across the United States during this time period, but the impact was not consistent across individual states.
+
 3. Question 3 Conclusions: **ANSWER HERE**
 
 ## Actions that need to be completed:
