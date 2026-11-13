@@ -70,6 +70,7 @@ Life expectancy is a great way to study the overall population health. However, 
     - bar charts to compare totals between 2018 and 2020 
     - bar chart showing changes across the US across both years 
     - box plot for distributions of totals across 2018 and 2020
+      
 *Question three: How did the relationship between the gender life expectancy gap and overall state life expectancy evolve between 2018 and 2020?*
 - Means: 
     - calculate the gap in life expectancies between males and females in 2018 and 2020
