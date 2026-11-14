@@ -28,7 +28,7 @@ def analyze_year(data, year):
   print("=====")
   print("Number of states:", len(pivot))
   print("Average overall life expectancy:", round(x.mean(), 3), "years")
-  print("Average overall life expectancy:", round(y.mean(), 3), "years")
+  print("Average gender gap:", round(y.mean(), 3), "years")
   print("correlation coefficient (r):", round(regression.rvalue, 4))
   print("R-squared:", round(regression.rvalue**2, 4))
   print("Regression slope:", round(regression.slope, 4))
