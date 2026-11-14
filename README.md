@@ -106,7 +106,11 @@ Life expectancy is a great way to study the overall population health. However, 
     - Visualization: The scatter plot was important for showing how state rankings changed between 2018 and 2020. Each point represents a state, allowing us to compare its ranking in both years.
     - Formatting: Final commands were used to customize the appearance of the graph. Labels were added to identify the rankings for each year, and a diagonal reference line was included to make it easier to identify states that improved or declined in ranking.
   
-- **ANSWER HERE** (SOMETHING INTERESTING/DIFFICULT FROM QUESTION 3)
+- Question 3: relationship between overall life expectancy and life expectancy gap between males and females
+  - Data Preparation: To compare the gender life expectancy gap and the overall life expectancy, the 2018 and 2020 dataset was loaded separately. It was then organized by state and sex. Additionally, a new column was created by calculating the gender life expectancy gap (female LE - male LE). This column was then used alongside the overall life expectancy column for analysis.
+  - Statistical Analysis: To determine the relationship between the 2018 and the 2020 data, linear regression was performed. A correlation coefficient was found to determine the strength and direction of the relationship, the R-squared value was used to determine the variations in the gaps based on the overall life expectancy, and the regression slope was used to determine the trend lines to compare 2018 and 2020.
+  - Visualization: Two scatter plots were created to show the relationship between the overall life expectancy and the gender life expectancy gap, one for 2018 and on for 2020. This allows us to better compare the two years.
+  - Formatting: The appearance of the scatter plots were customized using final commands. These commands included axis titles, legends, grid lines, and plot titles. The customizations allow for easier visual analysis of the data.The graphs were saved as PNG files in the plot folder for easy access. 
 
 ## Results:
 1. Question 1 Results:
@@ -138,16 +142,34 @@ Figure 6: State Life Expectancy Rankings from 2018 to 2020
 The results demonstrated that the average overall life expectancy across states decreased from 78.21 years in 2018 to 76.59 years in 2020. This represents an average decrease of 1.62 years. The standard deviation increased from 1.70 years in 2018 to 1.96 years in 2020. In 2018, West Virginia had the lowest life expectancy at 74.4 years, while Hawaii had the highest at 81.0 years. In 2020, Mississippi had the lowest life expectancy at 71.9 years, while Hawaii remained the highest at 80.7 years. The largest decrease was identified in New York at 2.8 years, followed by New Mexico and Mississippi at 2.7 years each. The smallest decrease was identified in New Hampshire at 0.1 years. New Hampshire also experienced the largest improvement in ranking, moving from 17th to 4th place, while New York experienced the largest decline, moving from 3rd to 15th place.
 
 
-3. Question 3 Results: **ANSWER HERE**
+3. Question 3 Results:
+<img width="1018" height="611" alt="image" src="https://github.com/user-attachments/assets/a6b56945-d9ef-438b-bdaf-17821761ef11" /> 
+
+Figure 7: Gender life expectancy gap vs. overall expectancy in 2018
+
+<img width="1291" height="771" alt="image" src="https://github.com/user-attachments/assets/c54d89f8-579e-45a0-a318-ef7718da5f51" />
+
+Figure 8: Gender life expectancy gap vs. overall expectancy in 2020
+
+<img width="340" height="122" alt="image" src="https://github.com/user-attachments/assets/c5ed8065-cdae-4045-915b-992ab78fa487" />
+
+Figure 9: Comparison between 2018 and 2020 data
+
+The results demonstrated that the average overall life expectancy across the U.S. decrease from 78.21 years in 2018 to 76.594 years in 2020. This represents an overall decrease of 1.616 years. The results also demonstrated that the average gender life expectancy gap increased from 5.018 years in 2018 to 5.586 years in 2020. This represents an overall increases of .568 years. This shows that there was an increase in the life expectancy gap from 2018 to 2020. Linear regression was used to observe the relationship between the life expectancy gap and the overall life expectancy. The correlation coefficient in 2018 was -.5108 and in 2020 was -.5866. These negative numbers show a negative relationship which means that the larger overall life expectancies had smaller life expectancy gaps between males and females. The R-squared values increased from .2609 in 2018 to .3441 in 2020. This indicates that the overall life expectancy in 2020 was a larger percentage of the variation in the life expectancy gap than 2018 was. The regression slope decreased from -.1581 in 2018 to -.1763 in 2020. This indicates that the negative relationship gained a steeper slope in 2020. These results show that the average life expectancy deccreased, the life expectancy gap increased, and the negative relationship of the overall life expectancy became stronger. 
+
+
+
 
 ## Conclusions: 
 1. Question 1 Conclusions: 
-Based on the results of the Question_One script, the difference between female and male life expectancy became larger between 2018 and 2020. While life expectancy decreased for both males and females, the larger decrease in male life expectancy contributed to this larger gap. Ultimately, the results suggest that the gender differences in life expectancy became more significant over this time period. With this, it is important to note that the variation in gender gaps across individual states demonstrate that this conclusion was not consistent throughout the United States.
+Based on the results of the Question1.py script, the difference between female and male life expectancy became larger between 2018 and 2020. While life expectancy decreased for both males and females, the larger decrease in male life expectancy contributed to this larger gap. Ultimately, the results suggest that the gender differences in life expectancy became more significant over this time period. With this, it is important to note that the variation in gender gaps across individual states demonstrate that this conclusion was not consistent throughout the United States.
 
 2. Question 2 Conclusions:
 Based on the results of the Question2.py script, overall life expectancy decreased across all states between 2018 and 2020. The average life expectancy decreased by 1.62 years, supporting our original expectation that life expectancy would decline during the COVID-19 pandemic. New York experienced the largest decrease, while New Hampshire experienced the smallest decrease. The increase in standard deviation also demonstrated that the variation in life expectancy across states became greater in 2020. Additionally, the changes in state rankings showed that some states experienced larger decreases than others. Ultimately, the results suggest that life expectancy declined across the United States during this time period, but the impact was not consistent across individual states.
 
-3. Question 3 Conclusions: **ANSWER HERE**
+3. Question 3 Conclusions:
+Based on the results of the Question3.py script, the overall life expectancy decreased across the U.S. and the life expectancy gap between males and females increased across the U.S.. Alongside this, the correlation coefficient became more negative which indicates a stronger relationship between a high overall life expectancy and a small life expectancy gap in males and females in 2020. These findings support our expectation that life expectancy may have been affected by the COVID-19 pandemic. However, this alone cannot establish that COVID-19 is what actually caused these changes. Ultimately, the results suggest that the relationship between the overall life expectancy and the life expectancy gap between males and females changed from 2018 to 2020. Further data would need to be analyzed in order to better understand the effects of the COVID-19 pandemic on the life expectancy across the U.S.. 
+
 
 ## Actions that need to be completed:
 will be populated later
