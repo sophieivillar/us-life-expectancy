@@ -6,6 +6,7 @@ from scipy.stats import linregress
 #Step 1: Load Data
 data_2018 = pd.read_csv("data/life_expectancy_2018.csv")
 data_2020 = pd.read_csv("data/life_expectancy_2020.csv")
+data_2020.rename(columns={"LE": "LEB"}, inplace=True)
 
 #Step 2: Analyze the data from each year 
 def analyze_year(data, year):
