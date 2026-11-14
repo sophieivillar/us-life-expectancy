@@ -53,7 +53,7 @@ return regression
 
 #Step 5: Compare 2018 and 2020
 results_2018 = analyze_year(data_2018, 2018)
-reuslts_2020 = analyze_year(data_2020, 2020)
+results_2020 = analyze_year(data_2020, 2020)
 print("\n=====")
 print("Comparison: 2018 vs 2020")
 print("=====")
